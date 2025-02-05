@@ -250,13 +250,34 @@ const Analytics: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 rounded-xl blur-[2px] opacity-75 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative bg-gray-900/90 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-gray-800">
                 <h3 className="text-lg font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
-                  Discrimination Types (2023)
+                  Discrimination Cases Distribution
                 </h3>
-                <div className="h-[250px] flex items-center justify-center">
+                <div className="h-[200px] sm:h-[250px]">
                   <Pie data={discriminationData} options={chartOptions} />
                 </div>
                 <p className="mt-3 text-gray-400 text-xs">
-                  Source: Barcelona Discrimination Observatory
+                  Source: Barcelona City Council Report 2023
+                </p>
+              </div>
+            </motion.div>
+
+            {/* New section for Poverty Data */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="relative group"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 rounded-xl blur-[2px] opacity-75 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative bg-gray-900/90 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-gray-800">
+                <h3 className="text-lg font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+                  Poverty Risk Distribution
+                </h3>
+                <div className="h-[200px] sm:h-[250px]">
+                  <Doughnut data={povertyData} options={chartOptions} />
+                </div>
+                <p className="mt-3 text-gray-400 text-xs">
+                  Source: Social Inclusion Report 2023
                 </p>
               </div>
             </motion.div>

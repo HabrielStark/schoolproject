@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -26,13 +27,13 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+                <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">Contact Us</a>
+                <Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link>
               </li>
             </ul>
           </motion.div>
@@ -45,7 +46,7 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://twitter.com"
                 className="text-gray-300 hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,7 +54,7 @@ const Footer: React.FC = () => {
                 Twitter
               </a>
               <a
-                href="#"
+                href="https://facebook.com"
                 className="text-gray-300 hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -61,7 +62,7 @@ const Footer: React.FC = () => {
                 Facebook
               </a>
               <a
-                href="#"
+                href="https://instagram.com"
                 className="text-gray-300 hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
