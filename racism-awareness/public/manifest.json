@@ -1,0 +1,61 @@
+{
+  "short_name": "RA",
+  "name": "Racism Awareness",
+  "description": "Join our mission to combat racism through education, data analysis, and community action.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1a1a2e",
+  "background_color": "#1a1a2e",
+  "orientation": "portrait",
+  "categories": ["education", "social", "news"],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Homepage of Racism Awareness Project"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View Analytics",
+      "url": "/analytics",
+      "description": "View latest racism statistics and data"
+    },
+    {
+      "name": "Resources",
+      "url": "/resources",
+      "description": "Access anti-racism resources and materials"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "scope": "/",
+  "lang": "en-US"
+}

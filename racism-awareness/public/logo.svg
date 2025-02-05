@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9333EA" />
+      <stop offset="50%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+      <feOffset dx="0" dy="0" result="offsetblur" />
+      <feFlood flood-color="#000000" flood-opacity="0.3" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded rectangle background -->
+  <rect width="512" height="512" rx="128" fill="url(#paint0_linear)" />
+
+  <path d="M160 320V180H220C240 180 255 184 265 192C275 200 280 212 280 228C280 238 277 247 271 254C265 261 257 266 247 268L285 320H245L212 272H195V320H160ZM195 245H218C226 245 232 243 236 239C240 235 242 230 242 224C242 218 240 213 236 209C232 205 226 203 218 203H195V245Z" 
+        fill="white" filter="url(#shadow)" />
+  
+  <path d="M285 320V180H320L375 275L430 180H465V320H430V230L375 320H375L320 230V320H285Z" 
+        fill="white" filter="url(#shadow)" />
+</svg> 
