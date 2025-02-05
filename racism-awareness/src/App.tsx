@@ -4,16 +4,16 @@ import { ChakraProvider, ThemeProvider, theme } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 // Components
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
 
 // Pages
-import Home from './pages/Home';
-import Analytics from './pages/Analytics';
-import Resources from './pages/Resources';
-import Privacy from './pages/Privacy';
-import Terms from './pages/Terms';
-import Contact from './pages/Contact';
+import Home from './pages/Home.tsx';
+import Analytics from './pages/Analytics.tsx';
+import Resources from './pages/Resources.tsx';
+import Privacy from './pages/Privacy.tsx';
+import Terms from './pages/Terms.tsx';
+import Contact from './pages/Contact.tsx';
 
 const App: React.FC = () => {
   return (
