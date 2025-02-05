@@ -7,6 +7,9 @@ import Footer from './components/Footer.tsx';
 import Home from './pages/Home.tsx';
 import Analytics from './pages/Analytics.tsx';
 import Resources from './pages/Resources.tsx';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import Contact from './pages/Contact';
 
 const MotionDiv = motion.div;
 
@@ -27,6 +30,9 @@ const App: React.FC = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/analytics" element={<Analytics />} />
                 <Route path="/resources" element={<Resources />} />
+                <Route path="/privacy" element={<Privacy />} />
+                <Route path="/terms" element={<Terms />} />
+                <Route path="/contact" element={<Contact />} />
               </Routes>
             </main>
             <Footer />
